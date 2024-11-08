@@ -8,11 +8,27 @@ body {
   }
   main {
     img {
-      height: 140px;
-      width: 140px;
+      height: 200px;
+      width: 200px;
+      @media screen and (min-width: 992px) {
+        height: 140px;
+        width: 140px;
+      }
     }
     .title {
       font-size: 4rem;
     }
+    input {
+      &::placeholder {
+        color: white;
+      }
+    }
   }
+}
+
+label {
+  font-size: 0.8rem;
+}
+.show-title {
+  font-size: 0.9rem;
 }

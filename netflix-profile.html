@@ -30,11 +30,12 @@
         </div>
       </nav>
     </header>
+    <!-- ora creo la mia struttura composta da tre row con la row centrale che contiene due col, una con l'avatar ed una col menù -->
     <main class="mt-5">
       <div>
         <div class="container">
           <div class="row">
-            <div>
+            <div class="col col-10 offset-1 col-lg-7 offset-lg-3">
               <p
                 class="title text-light border-1 border-bottom border-light border-opacity-25"
               >
@@ -42,25 +43,27 @@
               </p>
             </div>
           </div>
-          <div class="row mt-2">
-            <div class="col">
+          <div class="row my-2">
+            <div class="col col-10 offset-1 col-lg-2 offset-lg-3 mb-4 border-1">
               <img
                 class="rounded-1"
                 src="./assets/images/my-avatar.jpg"
                 alt="my-avatar"
               />
             </div>
-            <div class="col">
+            <div class="col col-10 offset-1 offset-lg-0 col-lg-5 pe-4">
               <div
                 class="border-1 border-bottom border-light border-opacity-25"
               >
-                <p class="text-light fs-5 bg-light bg-opacity-50 p-2">
-                  King Turtle
-                </p>
-                <p class="text-light lead fs-5 pt-2 mb-1">Language:</p>
+                <input
+                  class="text-light fs-5 bg-light border-0 bg-opacity-50 py-1 px-3 mb-3"
+                  placeholder="King Turtle"
+                />
+                King Turtle />
+                <p class="text-light lead fs-5 mt-4 mb-1">Language:</p>
                 <div class="dropdown mt-0 mb-4">
                   <button
-                    class="btn btn-dark bg-transparent border border-1 rounded-0 dropdown-toggle"
+                    class="btn btn-dark bg-transparent border border-1 rounded-0 dropdown-toggle py-0 px-3"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -73,11 +76,85 @@
                   </ul>
                 </div>
               </div>
-              <div></div>
-              <div></div>
+              <div
+                class="border-1 border-bottom border-light border-opacity-25"
+              >
+                <p class="text-light lead fs-5 mt-3 mb-1">Maturity settings:</p>
+                <p
+                  class="d-inline-block text-light fs-6 fw-semibold my-2 px-2 py-1 bg-secondary bg-opacity-50"
+                >
+                  ALL MATURITY RATINGS
+                </p>
+                <p class="show-title text-light my-1 fw-semibold">
+                  Show titles of all maturity ratings for this profile.
+                </p>
+                <button
+                  type="button"
+                  class="btn btn-dark border rounded-0 opacity-50 py-1 px-4 mt-2 mb-4"
+                >
+                  EDIT
+                </button>
+              </div>
+              <div class="mb-4">
+                <p class="text-light lead fs-5 mt-3 mb-1">Autoplay controls</p>
+
+                <div class="form-check p-0 my-2">
+                  <input
+                    class="form-check-input bg-transparent rounded-0 fs-3 opacity-25 m-0"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    class="form-check-label text-light ps-2"
+                    for="flexCheckDefault"
+                  >
+                    Autoplay next episode in a series on all devices
+                  </label>
+                </div>
+                <div class="form-check p-0 my-2">
+                  <input
+                    class="form-check-input bg-transparent rounded-0 fs-3 opacity-25 m-0"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label
+                    class="form-check-label text-light ps-2"
+                    for="flexCheckDefault"
+                  >
+                    Autoplay previews while browsing on all devices
+                  </label>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="row"></div>
+          <div class="row">
+            <div
+              class="col col-10 offset-1 col-lg-7 offset-lg-3 border-1 border-top border-light border-opacity-25 p-0"
+            >
+              <div class="mt-4">
+                <button
+                  type="button"
+                  class="btn btn-outline-light fs-5 fw-semibold border rounded-0 py-2 px-5 me-4 opacity-75"
+                >
+                  SAVE
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-light fs-5 fw-semibold lead border rounded-0 py-2 px-5 me-4 opacity-75"
+                >
+                  CANCEL
+                </button>
+                <button
+                  type="button"
+                  class="btn btn-outline-light fs-5 fw-semibold lead border rounded-0 py-2 px-5 opacity-75"
+                >
+                  DELETE PROFILE
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>

@@ -5,9 +5,29 @@ body nav img {
   height: 55px;
 }
 body main img {
-  height: 140px;
-  width: 140px;
+  height: 200px;
+  width: 200px;
+}
+@media screen and (min-width: 992px) {
+  body main img {
+    height: 140px;
+    width: 140px;
+  }
 }
 body main .title {
   font-size: 4rem;
+}
+body main input::-moz-placeholder {
+  color: white;
+}
+body main input::placeholder {
+  color: white;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+.show-title {
+  font-size: 0.9rem;
 }/*# sourceMappingURL=netflix.profile.css.map */
