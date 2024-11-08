@@ -5,8 +5,8 @@ body nav img {
   height: 55px;
 }
 body main img {
-  height: 200px;
-  width: 200px;
+  height: 255px;
+  width: 255px;
 }
 @media screen and (min-width: 992px) {
   body main img {
