@@ -1,0 +1,12 @@
+nav img {
+  height: 35px;
+}
+
+.custom-dropdown {
+  transform: translate(-60px);
+}
+@media screen and (min-width: 992px) {
+  .custom-dropdown {
+    transform: translate(-100px);
+  }
+}/*# sourceMappingURL=netflix.homepage.style.css.map */
