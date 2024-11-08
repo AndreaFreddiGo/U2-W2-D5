@@ -1,0 +1,13 @@
+body nav {
+  height: 50px;
+}
+body nav img {
+  height: 55px;
+}
+body main img {
+  height: 140px;
+  width: 140px;
+}
+body main .title {
+  font-size: 4rem;
+}/*# sourceMappingURL=netflix.profile.css.map */

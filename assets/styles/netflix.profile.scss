@@ -1,0 +1,18 @@
+// creo un file scss per gestire alcuni stili che specifici che non posso controllare direttamente in HTML con Bootstrap
+body {
+  nav {
+    height: 50px;
+    img {
+      height: 55px;
+    }
+  }
+  main {
+    img {
+      height: 140px;
+      width: 140px;
+    }
+    .title {
+      font-size: 4rem;
+    }
+  }
+}
