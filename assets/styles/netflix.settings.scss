@@ -1,0 +1,26 @@
+// creo un file scss per gestire alcuni stili che specifici che non posso controllare direttamente in HTML con Bootstrap
+nav {
+  img {
+    height: 35px;
+  }
+  .custom-dropdown {
+    transform: translate(-100px);
+  }
+}
+
+.firstColumn {
+  font-size: 0.9rem;
+  button {
+    font-size: 0.7rem;
+    box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.secondColumn {
+  font-size: 0.8rem;
+}
+
+.myAvatar {
+  max-width: 30px;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.3);
+}

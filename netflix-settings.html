@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Netflix settings</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <!-- aggiungo il link alle icone di Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <!-- aggiungo il collegamento al mio file style -->
+    <link rel="stylesheet" href="assets/styles/netflix.settings.css" />
+    <!-- aggiungo il collegamento al mio file style custom di Bootstrap-->
+    <link rel="stylesheet" href="./assets/styles/custom-bootstrap.css" />
+  </head>
+  <body class="bg-light">
+    <header>
+      <!-- creo la navbar applicandole uno stile di Bootstrap -->
+
+      <nav
+        class="navbar navbar-expand-lg bg-darkest fixed-top"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./assets/images/netflix_logo.png" alt="logo" />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">TV Shows</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Movies</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Recently Added</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">My List</a>
+              </li>
+            </ul>
+            <!-- in questa parte aggiungo le icone ed il dropdown menu del profilo -->
+            <div class="d-flex align-items-center">
+              <i class="bi bi-search text-light fs-5 px-2"></i>
+              <img
+                class="px-2"
+                src="./assets/images/kids_icon.png"
+                alt="kids"
+              />
+              <i class="bi bi-bell-fill text-light fs-5 px-2"></i>
+              <div class="dropdown">
+                <button
+                  class="btn btn-dark bg-transparent border-0 dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    id="avatar"
+                    src="./assets/images/my-avatar.jpg"
+                    alt="avatar"
+                  />
+                </button>
+                <ul class="dropdown-menu custom-dropdown">
+                  <li>
+                    <!-- ho collegato la pagina del profilo così cliccando nel menù a tendina si accede direttamente
+                    alla pagina profilo personale -->
+                    <a class="dropdown-item" href="./netflix-profile.html"
+                      >Profile</a
+                    >
+                  </li>
+                  <li>
+                    <!-- ho collegato la pagina del profilo così cliccando nel menù a tendina si accede direttamente
+                    alla pagina profilo personale -->
+                    <a class="dropdown-item" href="./netflix-settings.html"
+                      >Settings</a
+                    >
+                  </li>
+                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col col-10 offset-1 col-lg-8 offset-lg-2">
+            <p
+              class="text-dark fs-3 fw-semibold border-bottom border-dark border-opacity-25 pb-2 mb-2"
+            >
+              Account
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="firstColumn col 10 offset-1 col-lg-2 offset-lg-2 mb-3">
+            <p class="text-dark text-opacity-25 fw-semibold">
+              MEMBERSHIP & BILLING
+            </p>
+            <button
+              class="btn btn-outline-dark bg-secondary bg-opacity-25 border-0 rounded-0 px-4"
+            >
+              Cancel Membership
+            </button>
+            <hr class="col col-11 text-dark d-lg-none mt-3 mb-0" />
+          </div>
+          <div class="secondColumn col col-10 offset-1 col-lg-6 offset-lg-0">
+            <div class="d-flex justify-content-between">
+              <p class="fw-semibold mb-1">kingturtle@epicode.school</p>
+              <p class="text-info fw-semibold mb-1">Change account email</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-dark text-opacity-25 fw-semibold mb-1">
+                Password: ********
+              </p>
+              <p class="text-info fw-semibold mb-1">Change password</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-dark text-opacity-25 fw-semibold mb-1">
+                Phone: 347 847 7283
+              </p>
+              <p class="text-info fw-semibold mb-1">Change phone number</p>
+            </div>
+            <hr class="text-dark mt-1 mb-2" />
+            <div class="d-flex justify-content-between">
+              <p class="fw-semibold mb-1">
+                <i class="bi bi-paypal pe-2"></i>kingturtle@epicode.school
+              </p>
+              <p class="text-info fw-semibold mb-1">Update payment info</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p></p>
+              <p class="text-info fw-semibold mb-1">Billing details</p>
+            </div>
+            <hr class="text-dark mt-1 mb-2" />
+            <div class="d-flex justify-content-between">
+              <p></p>
+              <p class="text-info fw-semibold mb-1">
+                Redeem gift card or promo code
+              </p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p></p>
+              <p class="text-info fw-semibold mb-1">Where to buy gift cards</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-10 offset-1 col-lg-8 offset-lg-2">
+            <p
+              class="text-dark fs-3 fw-semibold border-bottom border-dark border-opacity-25 pb-2 mb-2"
+            ></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="firstColumn col 10 offset-1 col-lg-2 offset-lg-2">
+            <p class="text-dark text-opacity-25 fw-semibold mb-1">
+              PLAN DETAILS
+            </p>
+          </div>
+          <div class="secondColumn col col-10 offset-1 col-lg-6 offset-lg-0">
+            <div class="d-flex justify-content-between">
+              <p class="fw-semibold mb-1">
+                Premium<i class="ps-2 mt-0 bi bi-badge-4k"></i>
+              </p>
+              <p class="text-info fw-semibold mb-1">Change plan</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-10 offset-1 col-lg-8 offset-lg-2">
+            <p
+              class="text-dark fs-3 fw-semibold border-bottom border-dark border-opacity-25 pb-2 mb-2"
+            ></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="firstColumn col 10 offset-1 col-lg-2 offset-lg-2">
+            <p class="text-dark text-opacity-25 fw-semibold mb-1">SETTINGS</p>
+          </div>
+          <div class="secondColumn col col-10 offset-1 col-lg-6 offset-lg-0">
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">Parental controls</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">Test participation</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">Manage download devices</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">Activate a device</p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">
+                Recent device streaming activity
+              </p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">Sign out all devices</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-10 offset-1 col-lg-8 offset-lg-2">
+            <p
+              class="text-dark fs-3 fw-semibold border-bottom border-dark border-opacity-25 pb-2 mb-2"
+            ></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="firstColumn col 10 offset-1 col-lg-2 offset-lg-2">
+            <p class="text-dark text-opacity-25 fw-semibold mb-1">MY PROFILE</p>
+          </div>
+          <div class="secondColumn col col-10 offset-1 col-lg-6 offset-lg-0">
+            <div class="d-flex justify-content-between">
+              <p class="fw-semibold mb-1">
+                <img
+                  class="myAvatar me-2"
+                  src="./assets/images/my-avatar.jpg"
+                  alt="avatar"
+                />King Turtle
+              </p>
+              <p class="text-info fw-semibold mb-1 text-end">
+                Manage profile
+                <span class="d-block">Add profile email</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-10 offset-1 col-lg-8 offset-lg-2">
+            <p></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="firstColumn col 10 offset-1 col-lg-2 offset-lg-2">
+            <p></p>
+          </div>
+          <div class="secondColumn col col-10 offset-1 col-lg-6 offset-lg-0">
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">Language</p>
+              <p class="text-info fw-semibold mb-1">Viewing activity</p>
+              <p class="d-none d-lg-inline-block"></p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">Playback settings</p>
+              <p class="text-info fw-semibold mb-1">Ratings</p>
+              <p class="d-none d-lg-inline-block"></p>
+            </div>
+            <div class="d-flex justify-content-between">
+              <p class="text-info fw-semibold mb-1">Subtitle appearance</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

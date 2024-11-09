@@ -3,17 +3,13 @@ nav {
   img {
     height: 35px;
   }
-}
-
-.custom-dropdown {
-  transform: translate(-60px);
-  @media screen and (min-width: 992px) {
+  .custom-dropdown {
     transform: translate(-100px);
   }
 }
 
 footer {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   button p {
   }
 }

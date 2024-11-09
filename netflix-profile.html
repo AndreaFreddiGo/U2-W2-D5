@@ -15,16 +15,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
-    />
     <!-- aggiungo il collegamento al mio file style -->
     <link rel="stylesheet" href="assets/styles/netflix.profile.css" />
+    <!-- aggiungo il collegamento al mio file style custom di Bootstrap-->
+    <link rel="stylesheet" href="./assets/styles/custom-bootstrap.css" />
   </head>
-  <body class="bg-dark">
+  <body class="bg-darkest">
     <header>
       <!-- creo la navbar applicandole uno stile di Bootstrap -->
-      <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand pt-1" href="#">
             <img src="./assets/images/netflix_logo.png" alt="logo" />
           </a>
         </div>
@@ -35,7 +36,7 @@
       <div>
         <div class="container">
           <div class="row">
-            <div class="col col-10 offset-1 col-lg-7 offset-lg-3">
+            <div class="col col-9 offset-1 col-lg-6 offset-lg-3">
               <p
                 class="title text-light border-1 border-bottom border-light border-opacity-25"
               >
@@ -44,26 +45,25 @@
             </div>
           </div>
           <div class="row my-2">
-            <div class="col col-10 offset-1 col-lg-2 offset-lg-3 mb-4 border-1">
+            <div class="col col-9 offset-1 col-lg-2 offset-lg-3 mb-4 border-1">
               <img
                 class="rounded-1"
                 src="./assets/images/my-avatar.jpg"
                 alt="my-avatar"
               />
             </div>
-            <div class="col col-10 offset-1 offset-lg-0 col-lg-5 pe-4">
-              <div
-                class="border-1 border-bottom border-light border-opacity-25"
-              >
+            <div
+              class="col col-9 offset-1 offset-lg-0 col-lg-4 pe-4 flex-grow-1"
+            >
+              <div>
                 <input
                   class="text-light fs-5 bg-light border-0 bg-opacity-50 py-1 px-3 mb-3"
                   placeholder="King Turtle"
                 />
-                King Turtle />
                 <p class="text-light lead fs-5 mt-4 mb-1">Language:</p>
                 <div class="dropdown mt-0 mb-4">
                   <button
-                    class="btn btn-dark bg-transparent border border-1 rounded-0 dropdown-toggle py-0 px-3"
+                    class="btn btn-dark bg-black border border-1 rounded-0 dropdown-toggle py-0 px-3"
                     type="button"
                     data-bs-toggle="dropdown"
                     aria-expanded="false"
@@ -76,9 +76,10 @@
                   </ul>
                 </div>
               </div>
-              <div
-                class="border-1 border-bottom border-light border-opacity-25"
-              >
+              <hr
+                class="col col-9 col-lg-6 border-1 text-light text-opacity-75"
+              />
+              <div>
                 <p class="text-light lead fs-5 mt-3 mb-1">Maturity settings:</p>
                 <p
                   class="d-inline-block text-light fs-6 fw-semibold my-2 px-2 py-1 bg-secondary bg-opacity-50"
@@ -95,6 +96,9 @@
                   EDIT
                 </button>
               </div>
+              <hr
+                class="col col-9 col-lg-6 border-1 text-light text-opacity-75"
+              />
               <div class="mb-4">
                 <p class="text-light lead fs-5 mt-3 mb-1">Autoplay controls</p>
 
@@ -129,12 +133,19 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+      <footer>
+        <div class="container">
           <div class="row">
+            <hr
+              class="col col-9 col-lg-6 offset-1 offset-lg-3 text-light text-opacity-75"
+            />
             <div
-              class="col col-10 offset-1 col-lg-7 offset-lg-3 border-1 border-top border-light border-opacity-25 p-0"
+              class="col col-9 offset-1 col-lg-6 offset-lg-3 p-0 flex-grow-1"
             >
               <div
-                class="d-flex flex-column flex-lg-row align-items-start flex-wrap mt-4"
+                class="d-flex flex-column flex-lg-row align-items-start flex-wrap mt-2"
               >
                 <button
                   type="button"
@@ -158,7 +169,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </main>
 
     <script

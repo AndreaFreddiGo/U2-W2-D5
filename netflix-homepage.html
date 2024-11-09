@@ -16,13 +16,15 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
     <!-- aggiungo il collegamento al mio file style -->
-    <link rel="stylesheet" href="assets/styles/netflix.homepage.style.css" />
+    <link rel="stylesheet" href="assets/styles/netflix.homepage.css" />
+    <!-- aggiungo il collegamento al mio file style custom di Bootstrap-->
+    <link rel="stylesheet" href="./assets/styles/custom-bootstrap.css" />
   </head>
-  <body class="bg-dark">
+  <body class="bg-darkest">
     <header>
       <!-- creo la navbar applicandole uno stile di Bootstrap -->
       <nav
-        class="navbar navbar-expand-lg bg-dark fixed-top"
+        class="navbar navbar-expand-lg bg-darkest fixed-top"
         data-bs-theme="dark"
       >
         <div class="container-fluid">
@@ -86,6 +88,13 @@
                     alla pagina profilo personale -->
                     <a class="dropdown-item" href="./netflix-profile.html"
                       >Profile</a
+                    >
+                  </li>
+                  <li>
+                    <!-- ho collegato la pagina del profilo così cliccando nel menù a tendina si accede direttamente
+                    alla pagina profilo personale -->
+                    <a class="dropdown-item" href="./netflix-settings.html"
+                      >Settings</a
                     >
                   </li>
                   <li><a class="dropdown-item" href="#">Log out</a></li>
@@ -165,7 +174,7 @@
         </div>
       </section>
     </main>
-    <footer class="bg-dark">
+    <footer class="bg-darkest">
       <div>
         <div class="container"></div>
         <div class="row">
