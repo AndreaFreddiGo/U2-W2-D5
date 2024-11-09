@@ -23,156 +23,244 @@
   <body class="bg-darkest">
     <header>
       <!-- creo la navbar applicandole uno stile di Bootstrap -->
-      <nav
-        class="navbar navbar-expand-lg bg-darkest fixed-top"
-        data-bs-theme="dark"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="./assets/images/netflix_logo.png" alt="logo" />
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
+      <div class="container">
+        <div class="row">
+          <nav
+            class="navbar navbar-expand-lg bg-darkest fixed-top px-1"
+            data-bs-theme="dark"
           >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">TV Shows</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Movies</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Recently Added</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">My List</a>
-              </li>
-            </ul>
-            <!-- in questa parte aggiungo le icone ed il dropdown menu del profilo -->
-            <div class="d-flex align-items-center">
-              <i class="bi bi-search text-light fs-5 px-2"></i>
-              <img
-                class="px-2"
-                src="./assets/images/kids_icon.png"
-                alt="kids"
-              />
-              <i class="bi bi-bell-fill text-light fs-5 px-2"></i>
-              <div class="dropdown">
-                <button
-                  class="btn btn-dark bg-transparent border-0 dropdown-toggle"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <img
-                    id="avatar"
-                    src="./assets/images/my-avatar.jpg"
-                    alt="avatar"
-                  />
-                </button>
-                <ul class="dropdown-menu custom-dropdown">
-                  <li>
-                    <!-- ho collegato la pagina del profilo così cliccando nel menù a tendina si accede direttamente
-                    alla pagina profilo personale -->
-                    <a class="dropdown-item" href="./netflix-profile.html"
-                      >Profile</a
-                    >
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="./assets/images/netflix_logo.png" alt="logo" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#">Home</a>
                   </li>
-                  <li>
-                    <!-- ho collegato la pagina del profilo così cliccando nel menù a tendina si accede direttamente
-                    alla pagina profilo personale -->
-                    <a class="dropdown-item" href="./netflix-settings.html"
-                      >Settings</a
-                    >
+                  <li class="nav-item">
+                    <a class="nav-link active" href="#">TV Shows</a>
                   </li>
-                  <li><a class="dropdown-item" href="#">Log out</a></li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Movies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Recently Added</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">My List</a>
+                  </li>
                 </ul>
+                <!-- in questa parte aggiungo le icone ed il dropdown menu del profilo -->
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-search text-light fs-5 px-2"></i>
+                  <img
+                    class="px-2"
+                    src="./assets/images/kids_icon.png"
+                    alt="kids"
+                  />
+                  <i class="bi bi-bell-fill text-light fs-5 px-2"></i>
+                  <div class="dropdown">
+                    <button
+                      class="btn btn-dark bg-transparent border-0 dropdown-toggle"
+                      type="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      <img
+                        id="avatar"
+                        src="./assets/images/my-avatar.jpg"
+                        alt="avatar"
+                      />
+                    </button>
+                    <ul class="dropdown-menu custom-dropdown">
+                      <li>
+                        <!-- ho collegato la pagina del profilo così cliccando nel menù a tendina si accede direttamente
+                    alla pagina profilo personale -->
+                        <a class="dropdown-item" href="./netflix-profile.html"
+                          >Profile</a
+                        >
+                      </li>
+                      <li>
+                        <!-- ho collegato la pagina del profilo così cliccando nel menù a tendina si accede direttamente
+                    alla pagina profilo personale -->
+                        <a class="dropdown-item" href="./netflix-settings.html"
+                          >Settings</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col col-12 mt-3 mx-0">
+            <div class="d-flex justify-content-between">
+              <div class="d-flex">
+                <p class="text-light fs-4 fw-semibold">TV Shows</p>
+                <div class="dropdown ms-4 mt-1">
+                  <button
+                    class="text-light bg-black border border-1 rounded-0 dropdown-toggle py-0 px-3"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Genres
+                  </button>
+                  <ul class="dropdown-menu" data-bs-theme="dark">
+                    <li><a class="dropdown-item" href="#">Anime</a></li>
+                    <li><a class="dropdown-item" href="#">Comedies</a></li>
+                    <li><a class="dropdown-item" href="#">Dramas</a></li>
+                    <li><a class="dropdown-item" href="#">Horror</a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-1">
+                <i
+                  class="bi bi-list text-light border border-1 border-light px-2"
+                ></i>
+                <i
+                  class="bi bi-grid-fill text-light border border-1 border-light px-2"
+                ></i>
               </div>
             </div>
           </div>
         </div>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <div class="container">
-          <div class="row">
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
+        <div class="row">
+          <div class="col col-12 mt-2 mx-0">
+            <div>
+              <p class="text-light fs-6 fw-semibold">Trending Now</p>
             </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
+            <div id="carouselExample" class="carousel slide">
+              <div class="carousel-inner">
+                <div class="row">
+                  <div class="carousel-item active">
+                    <img
+                      src="./assets/images/media/media0.webp"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media1.jpg"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media2.webp"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media3.webp"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media4.jpg"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media5.webp"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media6.jpg"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media7.webp"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media8.webp"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media9.jpg"
+                      class="d-block w-25"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="./assets/images/media/media10.jpg"
+                      class="d-block w-25"
+                    />
+                  </div>
+                </div>
+              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExample"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
-            </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
-            </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
-            </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
-            </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
-            </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
-            </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
-            </div>
-            <div class="text-light fs-1">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-              amet dolor aliquam necessitatibus nisi, quis, accusantium unde
-              recusandae atque quam eligendi inventore pariatur provident? Sunt
-              nemo animi sint consequuntur cum?
-            </div>
-            <div></div>
           </div>
         </div>
-      </section>
+        <div class="row">
+          <div class="col col-12 mt-2 mx-0">
+            <div>
+              <p class="text-light fs-6 fw-semibold">Watch It Again</p>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-12 mt-2 mx-0">
+            <div>
+              <p class="text-light fs-6 fw-semibold">New Releases</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
     <footer class="bg-darkest">
       <div>

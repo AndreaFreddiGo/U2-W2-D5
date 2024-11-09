@@ -7,9 +7,18 @@ nav {
     transform: translate(-100px);
   }
 }
+main {
+  i,
+  button,
+  li {
+    font-size: 0.7rem;
+  }
+}
 
 footer {
   font-size: 0.7rem;
-  button p {
-  }
+}
+
+.btnGenres {
+  font-size: 0.7rem;
 }
