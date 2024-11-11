@@ -23,7 +23,9 @@ footer {
   font-size: 0.7rem;
 }
 
-#carouselExample {
+#carouselExample,
+#carouselExample2,
+#carouselExample3 {
   img {
     transition: transform 1s, z-index 1s, box-shadow 1s;
     z-index: 1;
